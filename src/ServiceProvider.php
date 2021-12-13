@@ -23,7 +23,7 @@ class ServiceProvider extends IlluminateServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../views', 'febalist');
 
-        $this->loadViewComponentsAs(null, [
+        $this->loadViewComponentsAs('', [
             Checkbox::class,
             Form::class,
             Input::class,
