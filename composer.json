@@ -1,0 +1,20 @@
+{
+  "name": "febalist/laravel-components",
+  "license": "MIT",
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "illuminate/contracts": "^8.73"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Febalist\\Laravel\\Components\\ServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Febalist\\Laravel\\Components\\": "src/"
+    }
+  }
+}
