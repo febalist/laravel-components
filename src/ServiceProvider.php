@@ -38,7 +38,6 @@ class ServiceProvider extends IlluminateServiceProvider
             Select::class,
         ]);
 
-        Blade::component("febalist::components.alpine", "alpine");
         Blade::component("febalist::components.button", "button");
         Blade::component("febalist::components.error", "error");
         Blade::component("febalist::components.form-group", "form-group");
