@@ -14,6 +14,7 @@ use Febalist\Laravel\Components\Components\InputImages;
 use Febalist\Laravel\Components\Components\InputInteger;
 use Febalist\Laravel\Components\Components\InputTime;
 use Febalist\Laravel\Components\Components\Select;
+use Febalist\Laravel\Components\Components\Textarea;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
@@ -36,6 +37,7 @@ class ServiceProvider extends IlluminateServiceProvider
             InputInteger::class,
             InputTime::class,
             Select::class,
+            Textarea::class,
         ]);
 
         Blade::component("febalist::components.button", "button");
