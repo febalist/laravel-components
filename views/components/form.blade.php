@@ -1,11 +1,11 @@
-<form method="{{ $method }}" action="{{ $action }}"
+<form method="{{ $method === 'GET' ? 'GET' : 'POST' }}" action="{{ $action }}"
     {{ $attributes->merge(['enctype' => 'multipart/form-data']) }}>
 
-    @method($method)
+  @method($method)
 
-    @if($method !== 'GET')
-        @csrf
-    @endif
+  @if($method !== 'GET')
+    @csrf
+  @endif
 
-    {{ $slot }}
+  {{ $slot }}
 </form>
