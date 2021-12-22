@@ -42,8 +42,11 @@ class ServiceProvider extends IlluminateServiceProvider
 
         Blade::component("febalist::components.button", "button");
         Blade::component("febalist::components.card", "card");
+        Blade::component("febalist::components.date", "date");
+        Blade::component("febalist::components.datetime", "datetime");
         Blade::component("febalist::components.error", "error");
         Blade::component("febalist::components.form-group", "form-group");
         Blade::component("febalist::components.input-group", "input-group");
+        Blade::component("febalist::components.time", "time");
     }
 }
